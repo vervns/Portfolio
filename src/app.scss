@@ -1,0 +1,76 @@
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh;
+    scroll-snap-align: center;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+
+body {
+    background-color: #9b9b9b;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+@mixin mobile {
+  @media (max-width:738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width:1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width:1366px) {
+    @content;
+  }
+}
+
+// HIDE SCROLLBAR
+// ::-webkit-scrollbar {
+//     display: none;
+//   }
+  
+//   * {
+//     -ms-overflow-style: none; 
+//     scrollbar-width: none; 
+//   }
+
+/* Define the styles for the scrollbar */
+::-webkit-scrollbar {
+  width: 6px; 
+}
+  
+/* Define the track (the area where the thumb doesn't appear) */
+::-webkit-scrollbar-track {
+  background-color: transparent; 
+}
+
+/* Define the thumb (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+  background-color: #CCCCCC; 
+  border-radius: 50px; 
+}
+
+/* Define the hover styles for the thumb */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #161616; 
+}

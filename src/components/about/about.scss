@@ -1,0 +1,93 @@
+@import "../../app.scss";
+.about {
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    // z-index: -1;
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: flex-end;
+        gap: 1.5rem;
+        margin-top: 5rem;
+        color: #161616;
+        @include mobile {
+            align-items: flex-start; 
+            margin-left: 1rem; 
+            margin-right: 1rem; 
+        }
+        @include tablet {
+            align-items: flex-start;
+            margin-left: 1rem; 
+            margin-right: 1rem; 
+        }
+    }
+
+    .titleContainer {
+        font-size: 4.3rem;
+        letter-spacing: 0.2rem;
+        margin-right: 20rem;
+        border-bottom: 1px solid #161616;
+        // font-weight: 500;
+        @include mobile {
+            margin: auto;
+            font-size: 3rem;
+        }
+        @include tablet {
+            margin: auto;
+        }
+    }
+
+    .textContainer {
+        margin-left: 40rem;
+        margin-right: 1rem;
+        line-height: 180%;
+        font-size: larger;
+        @include mobile {
+            margin: auto;
+            text-align: justify; 
+            font-size: smaller;
+        }
+        @include tablet {
+            margin: auto;
+            text-align: justify; 
+        }
+    }
+
+    .imageContainer {
+        height: 100%; 
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom:0;
+        // z-index: -1;
+
+        img {
+            width: auto;
+            height: 100%;
+            max-width: 100%;
+            opacity: 0.8;
+            @include mobile {
+                opacity: 0.1;
+            }
+            @include tablet {
+                opacity: 0.1;
+            }
+        }
+    }
+    .icon {
+        cursor: pointer;
+        height: 2rem;
+    }
+    .arrow {
+        position: absolute;
+        // right: -5rem;
+        bottom: 2.5rem;
+        right: 1rem;
+        bottom: 1rem;
+      }
+}
+

@@ -1,0 +1,91 @@
+@import "../../app.scss";
+.skills {
+    height: 100%;
+    background-color: white;
+    color: #161616;
+    position: relative;
+
+    .title {
+        font-size: 3rem;
+        text-align: center;
+        padding-top: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.2rem;
+        // padding-bottom: 1rem;
+    }
+
+    .skills-sub-title {
+      color: rgb(85, 85, 85);
+      font-weight: 500;
+      font-size: 1.75rem;
+      margin-bottom: 2rem;
+      letter-spacing: 0.1rem;
+      @include mobile {
+        margin: auto;
+      }
+    }
+
+    .skills-details-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .article-container {
+      display: flex;
+      text-align: initial;
+      flex-wrap: wrap;
+      flex-direction: row;
+      gap: 2.5rem;
+      justify-content: space-around;
+      margin-bottom: 1rem;
+      @include mobile {
+        gap: 1rem;
+        justify-content: left;
+        margin: auto;
+        font-size: smaller;
+      }
+    }
+
+    .details-container {
+      padding: 1rem;
+      flex: 1;
+      background: white;
+      border-radius: 2rem;
+      border: rgb(53, 53, 53) 0.1rem solid;
+      border-color: rgb(163, 163, 163);
+      text-align: center;
+      margin: 1rem;
+      @include mobile {
+        padding: 1rem;
+        border-radius: 0;
+        margin: 0.5rem;
+      }
+    }
+    
+    section {
+      padding-top: 4vh;
+      height: 96vh;
+      margin: 0 10rem;
+      box-sizing: border-box;
+      min-height: fit-content;
+    }
+
+    article {
+        display: flex;
+        width: 10rem;
+        justify-content: space-around;
+        gap: 0.5rem;
+    }
+
+    article .icon {
+      cursor: default;
+    }
+    .icon {
+      cursor: pointer;
+      height: 2rem;
+    }
+}
+
+
+  
