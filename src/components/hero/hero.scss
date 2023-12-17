@@ -65,8 +65,8 @@
         z-index: -1;
         max-width: 100%;
         @include mobile {
-            height: auto;
-            max-width: 250px;
+            height: 299px;
+            max-width: 425px;
             float: none;
             display: block;
         }
