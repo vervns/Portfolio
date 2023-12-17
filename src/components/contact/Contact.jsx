@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import React from "react";
 import "./contact.scss";
 import { motion, useInView } from "framer-motion";
 
@@ -22,6 +23,14 @@ const Contact = () => {
 
   const isInView = useInView(ref, { margin: "-100px" });
 
+  const handleLinkedInClick = () => {
+    window.location.href = 'https://linkedin.com/in/verns';
+  };
+
+  const handleMailClick = () => {
+    window.location.href = 'mailto:vervns.v@gmail.com';
+  };
+
   return (
     <div
       ref={ref}
@@ -32,9 +41,17 @@ const Contact = () => {
     >
       <div className="textContainer" variants={variants}>
         <h1 variants={variants}>Contact Me</h1>
-        <div className="item" variants={variants}>
+        <div className="item" variants={variants} onClick={handleMailClick}>
           <h2>Mail</h2>
-          <span>vervns.v@gmail.com</span>
+          <a href="mailto:vervns.v@gmail.com">
+            <span>vervns.v@gmail.com</span>
+          </a>
+        </div>
+        <div className="item" variants={variants} onClick={handleLinkedInClick}>
+          <h2>Linkedin</h2>
+          <a href="https://linkedin.com/in/verns" target="_blank" rel="noopener noreferrer">
+            <span>linkedin.com/in/verns</span>
+          </a>
         </div>
         <div className="item" variants={variants}>
           <h2>Location</h2>
