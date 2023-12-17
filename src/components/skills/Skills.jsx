@@ -40,7 +40,7 @@ export const Skills = () => {
                 />
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Basic</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
