@@ -66,9 +66,10 @@
         max-width: 100%;
         @include mobile {
             height: 299px;
-            max-width: 425px;
+            width: 425px;
             float: none;
             display: block;
+            object-fit: cover;
         }
         @include tablet {
             height: auto;
