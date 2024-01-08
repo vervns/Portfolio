@@ -44,7 +44,7 @@ const Hero = () => {
     }, []);
 
     const handleDownload = () => {
-        const fileName = "Verga Nathanael - Resume.pdf";
+        const fileName = "Verga Nathanael - CV.pdf";
         const link = document.createElement("a");
         link.href = `${fileName}`;
         link.download = fileName;
